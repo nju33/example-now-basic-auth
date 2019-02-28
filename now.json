@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "nju33--example-now-basic-auth",
+  "alias": "nju33--example-now-basic-auth.now.sh",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "builds": [
+    {
+      "src": "src/@(hello).js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [{"src": "^/(.*)", "dest": "src/$1.js"}]
+}

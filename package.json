@@ -1,0 +1,16 @@
+{
+  "name": "example-now-basic-auth",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "nju33/example-now-basic-auth",
+  "author": "nju33 <nju33.ki@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node -r dotenv/config `yarn bin micro-dev` --port 4123 src/__dev.js",
+    "deploy": "now && now alias && now rm -sy `node -pe \"require('./now.json').alias\"`"
+  },
+  "devDependencies": {
+    "micro-dev": "^3.0.0",
+    "microrouter": "^3.1.3"
+  }
+}
