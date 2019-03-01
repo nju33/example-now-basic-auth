@@ -10,6 +10,7 @@
     "deploy": "now && now alias && now rm -sy `node -pe \"require('./now.json').alias\"`"
   },
   "devDependencies": {
+    "micro": "^9.3.3",
     "micro-dev": "^3.0.0",
     "microrouter": "^3.1.3"
   }
